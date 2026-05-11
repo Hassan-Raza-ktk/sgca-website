@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activities & Functions | SGCA School System</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-shell">
+      <a class="brand" href="index.html" aria-label="SGCA home">
+        <img src="assets/logo/logo.png" alt="SGCA School logo">
+        <span><strong>Sheen Ghar Children Academy</strong><small>Education for Humanity</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><i data-lucide="menu"></i></button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="academics.html">Academics</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="activities.html" class="active">Activities</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a class="nav-cta" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero activities-hero">
+      <p class="eyebrow">Activities Hub</p>
+      <h1>School functions, activities, competitions and memories.</h1>
+      <p>SGCA activities hub brings together school functions, assemblies, classroom activities, exams, competitions, trips and video memories in one organized place. Parents and visitors can quickly filter the gallery and view the moments that show student confidence, discipline, participation and school life.</p>
+    </section>
+
+    <section class="media-hub enhanced-media-hub">
+      <div class="section-heading">
+        <p class="eyebrow dark">Media Gallery</p>
+        <h2>Choose what you want to view.</h2>
+      </div>
+      <div class="filter-bar" aria-label="Media filters">
+        <button class="filter-btn active" data-filter="all"><i data-lucide="layout-grid"></i> All</button>
+        <button class="filter-btn" data-filter="assembly"><i data-lucide="sunrise"></i> Assembly</button>
+        <button class="filter-btn" data-filter="activity"><i data-lucide="blocks"></i> Activities</button>
+        <button class="filter-btn" data-filter="exam"><i data-lucide="clipboard-check"></i> Exams</button>
+        <button class="filter-btn" data-filter="competition"><i data-lucide="trophy"></i> Competitions</button>
+        <button class="filter-btn" data-filter="trip"><i data-lucide="map"></i> Trips</button>
+        <button class="filter-btn" data-filter="video"><i data-lucide="video"></i> Videos</button>
+      </div>
+
+      <div class="activity-gallery">
+        <article class="activity-card" data-type="assembly activity">
+          <img src="assets/images/Assembly.jpg" alt="Morning assembly at SGCA">
+          <div><span>Assembly</span><h3>Morning Assembly</h3><p>Students start the day with discipline, prayer and school routine.</p><small>Date can be added</small></div>
+        </article>
+        <article class="activity-card" data-type="activity">
+          <img src="assets/images/ballons.jpg" alt="Classroom activity at SGCA">
+          <div><span>Activity</span><h3>Creative Classroom Activity</h3><p>Colorful activities help children learn with interest and confidence.</p><small>Date can be added</small></div>
+        </article>
+        <article class="activity-card" data-type="exam">
+          <img src="assets/images/exam.jpg" alt="Exam activity at SGCA">
+          <div><span>Exam</span><h3>Exams & Written Practice</h3><p>Regular assessments help students revise and improve their performance.</p><small>Date can be added</small></div>
+        </article>
+        <article class="activity-card" data-type="exam">
+          <img src="assets/images/exam 1.jpg" alt="Students taking exam">
+          <div><span>Exam</span><h3>Academic Assessment</h3><p>Class tests build focus, preparation habits and academic discipline.</p><small>Date can be added</small></div>
+        </article>
+        <article class="activity-card" data-type="competition">
+          <img src="assets/images/Quiz compitation.jpg" alt="Quiz competition at SGCA">
+          <div><span>Competition</span><h3>Quiz Competition</h3><p>Students participate in knowledge-based competitions and activities.</p><small>Date can be added</small></div>
+        </article>
+        <article class="activity-card" data-type="competition">
+          <img src="assets/images/Shields.jpg" alt="Awards and shields at SGCA">
+          <div><span>Achievements</span><h3>Awards & Shields</h3><p>Recognition motivates students to work harder and participate actively.</p><small>Date can be added</small></div>
+        </article>
+        <article class="activity-card" data-type="trip">
+          <img src="assets/images/Tanda_dam.jpg" alt="SGCA trip memory">
+          <div><span>Trip</span><h3>Trip Memories</h3><p>School trips create memorable learning experiences outside the classroom.</p><small>Date can be added</small></div>
+        </article>
+        <article class="activity-card" data-type="activity">
+          <img src="assets/images/kohat_board.jpg" alt="SGCA academic board activity">
+          <div><span>Activity</span><h3>Academic Activity</h3><p>Students are encouraged through classroom and school-level activities.</p><small>Date can be added</small></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="video-section">
+      <div class="section-heading">
+        <p class="eyebrow dark">Videos</p>
+        <h2>School video library.</h2>
+        <p>Videos of annual functions, classroom activities, trips and student performances will be organized here for parents and visitors.</p>
+      </div>
+      <div class="video-grid">
+        <article class="video-library-card" data-type="video">
+          <div class="video-thumb">
+            <img src="assets/images/Shields.jpg" alt="SGCA annual function video cover">
+            <span><i data-lucide="play-circle"></i></span>
+          </div>
+          <div class="video-info">
+            <small>Function</small>
+            <h3>Annual Function Video</h3>
+            <p>Reserved for stage performances, prize distribution and annual school function highlights.</p>
+            <strong>Coming Soon</strong>
+          </div>
+        </article>
+        <article class="video-library-card" data-type="video">
+          <div class="video-thumb">
+            <img src="assets/images/ballons.jpg" alt="SGCA class activity video cover">
+            <span><i data-lucide="play-circle"></i></span>
+          </div>
+          <div class="video-info">
+            <small>Class Activity</small>
+            <h3>Classroom Activity Video</h3>
+            <p>Reserved for learning activities, student participation and classroom creativity.</p>
+            <strong>Coming Soon</strong>
+          </div>
+        </article>
+        <article class="video-library-card" data-type="video">
+          <div class="video-thumb">
+            <img src="assets/images/Tanda_dam.jpg" alt="SGCA trip video cover">
+            <span><i data-lucide="play-circle"></i></span>
+          </div>
+          <div class="video-info">
+            <small>Trip</small>
+            <h3>Trip & Memories Video</h3>
+            <p>Reserved for school trips, outdoor visits and memorable student moments.</p>
+            <strong>Coming Soon</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div><h3>SGCA Activities</h3><p>Photos, videos and school memories can be updated any time.</p></div>
+    <div><a href="index.html">Home</a><a href="about.html">About</a><a href="academics.html">Academics</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a></div>
+  </footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
